@@ -4,7 +4,7 @@ import Expense from './components/Expense'
 import DisplayData from './components/DisplayData'
 // import dummyData from './dummyData'
 import { useEffect, useState } from 'react';
-import UseLocalstorge from './Hooks/useLocalstorge';
+import UseLocalstorage from './Hooks/UseLocalstorage';
 
 function App() {
 
@@ -16,7 +16,7 @@ function App() {
   // const [expenseData, setexpenseData] = useState([])
 
 
-  const [expenseData, setexpenseData] = UseLocalstorge(key,[])
+  const [expenseData, setexpenseData] = UseLocalstorage(key,[])
 
 
   
