@@ -17,21 +17,39 @@ function App() {
 
 
   const [expenseData, setexpenseData] = UseLocalstorage(key,[])
+  const [category,setcategory] = useState([
+    "Clothes",
+    "Study",
+    "Petrol",
+    "Grocery",
+    "Food & Drinks",
+    "Subscriptions",
+    "Medical",
+    "Entertainment",
+    "Travel",
+    "Recharge & Bills",
+    "EMI / Loan",
+    "Investment",
+    "Rent",
+    "Gifts & Donations",
+    "Others"
+  ])
 
 
   
   return (
     <div className="mt-6 max-w-6xl mx-auto">
-        <h1 className="text-center text-blue-600 text-2xl mb-4">Expense Tracker</h1>
+        <h1 className="text-center text-blue-600 text-2xl mb-4">Spendbook - Expense Tracker</h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 p-4 gap-10 ">
 
 
         <Expense 
-        
+          category={category}
           setexpenseData={setexpenseData} />
 
 
         <DisplayData 
+                  category={category}
         setexpenseData= {setexpenseData}
           expenseData={expenseData} 
           keyvalue={key}

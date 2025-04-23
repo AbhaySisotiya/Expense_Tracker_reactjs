@@ -3,7 +3,7 @@ import SelectMenu from './ui/SelectMenu';
 import UseFilterDataHook from '../Hooks/UseFilterDataHook';
 import { data } from 'react-router-dom';
 
-function DisplayData({ expenseData, setexpenseData, keyvalue }) {
+function DisplayData({ expenseData, setexpenseData, keyvalue ,category}) {
 
     const [Filterdata, setQuery] = UseFilterDataHook(expenseData, (data) => data.category)
 
@@ -37,7 +37,7 @@ function DisplayData({ expenseData, setexpenseData, keyvalue }) {
                                 <SelectMenu
                                     id={"category"}
                                     name={"category"}
-                                    options={["cloths", "study", "petrol", "grocery"]}
+                                    options={category}
                                     defaultOption={"All Category"}
                                     onChange={(e) => setQuery(e.target.value)}
                                 ></SelectMenu>

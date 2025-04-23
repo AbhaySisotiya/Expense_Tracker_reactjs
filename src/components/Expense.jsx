@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Input from './ui/Input'
 import SelectMenu from './ui/SelectMenu'
 
-function Expense({setexpenseData }) {
+function Expense({setexpenseData ,category}) {
 
     const [data,setdata] = useState({
         title:'',
@@ -89,7 +89,7 @@ function Expense({setexpenseData }) {
                 name={"category"}
                 value={data.category}
                 onChange={HandleValues}
-                options={["cloths","study","petrol","grocery"]}
+                options={category}
                 defaultOption={"Select Category"}
                 iserror={iserror}
                 error={errors.category}
