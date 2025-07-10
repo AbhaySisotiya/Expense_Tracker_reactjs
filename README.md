@@ -1,6 +1,6 @@
 # 💸 SpendBook - Expense Tracker
 
-![SpendBook Banner](https://res.cloudinary.com/dbntubtl7/image/upload/v1746179787/Screenshot_437_t5akiz.png)
+![SpendBook Banner](https://res.cloudinary.com/dbntubtl7/image/upload/v1752158533/Screenshot_437_trdmyg.png)
 
 **Live Demo:** [https://spendbook.netlify.app/](https://spendbook.netlify.app/)
 
